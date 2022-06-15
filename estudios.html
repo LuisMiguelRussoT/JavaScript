@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida</title>
+    <link rel="stylesheet" href="CSS/estilos.css" type="text/css" />
+    <script src="./js/temas.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <ul id="menuprincipal">
+                <li><a href="informacion.html"> Informacion</a></li>
+                <li><a href="expLaboral.html">Experiencia Laboral</a></li>
+                <li><a href="refPersonales.html">Ref Personales</a></li>
+                <li><a href="refFamiliares.html">Ref Familiares</a></li>
+                <li><a class="menu" href="estudios.html">Estudios Realizados</a></li>
+            </ul>
+        </div>
+
+        <div class="desplegable" style="float:right">
+            <button class="botondespl">Temas</button>
+            <div class="desplegable-content">
+                <a onclick=cambioColor(1)>Verde</a>
+                <a onclick=cambioColor(2)>Rojo</a>
+                <a onclick=cambioColor(3)>Morado</a>
+            </div>
+        </div>
+
+    </header>
+    <br><br><br>
+    <center>
+        <button class="acordeon">Estudios Realizados</button>
+    </center>
+  <br>
+
+  <button class="acordeon" onclick=contraer(0)>Pregrado</button>
+<div class = "panel">
+<p>
+    <table border="negro">
+        <tr>
+            <td>Universidad</td>
+            <td>Politecnico Gran Colombiano</td>
+        <tr>
+            <td>Tituto </td>
+            <td>Ingeniero de Software</td>
+        <tr>
+            <td>Estado</td>
+            <td>Cursando - 3er Semestre</td>
+        </tr>
+    </table>
+</p>
+</div>
+<button class="acordeon" onclick=contraer(1)>PreGrado</button>
+<div class = "panel">
+<p>
+    <table border="none">
+        <tr>
+            <td>Universidad</td>
+            <td>Universidad Cooperativa de Colombia</td>
+        <tr>
+            <td>Tituto </td>
+            <td>Administrador de Empresas</td>
+        <tr>
+            <td>Estado</td>
+            <td>Culminado - Marzo - 2015</td>
+        </tr>
+    </table>
+</p>
+</div>
+
+<button class="acordeon" onclick=contraer(2)>Postgrado</button>
+<div class = "panel">
+<p>
+    <table border="negro">
+        <tr>
+            <td>Universidad</td>
+            <td>Universidad Minito de Dios</td>
+        <tr>
+            <td>Tituto </td>
+            <td>Especialista en Gerencia de Proyectos</td>
+        <tr>
+            <td>Estado</td>
+            <td>Culminado - Noviembre - 2018</td>
+        </tr>
+    </table>
+</p>
+</div>
+
+    </body>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida</title>
+    <link rel="stylesheet" href="CSS/estilos.css" type="text/css" />
+    <script src="./js/temas.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <ul id="menuprincipal">
+                <li><a class="menu" href="informacion.html"> Información</a></li>
+                <li><a href="expLaboral.html">Experiencia Laboral</a></li>
+                <li><a href="refPersonales.html">Ref Personales</a></li>
+                <li><a href="refFamiliares.html">Ref Familiares</a></li>
+                <li><a href="estudios.html">Estudios Realizados</a></li>
+            </ul>
+        </div>
+
+
+        <div class="desplegable" style="float:right">
+            <button class="botondespl">Temas</button>
+            <div class="desplegable-content">
+                <a onclick=cambioColor(1)>Verde</a>
+                <a onclick=cambioColor(2)>Rojo</a>
+                <a onclick=cambioColor(3)>Morado</a>
+            </div>
+        </div>
+
+    </header>
+    <br>
+    <center><img class="sombra" src="./imagenes/foto.jpg" width="300PX" border="10px"></center>
+    <br>
+
+    <button class="acordeon" onclick=contraer(0)>Perfil Profesional</button>
+    <div class="panel">
+        <p>
+            I am a business administrator with experience in customer management
+            and sales and after-sales processes with comprehensive knowledge in
+            the financial, accounting, human resources and operational areas of
+            organizations, with a willingness to learn and adapt to the different
+            work needs. also have excellent analytical skills, advanced management
+            of office automation tools and excellent command of the English language.
+        </p>
+    </div>
+   
+    <br>
+
+    <button class="acordeon" onclick=contraer(1) id="menuprincipal">Contacto</button>
+        <div class="panel">
+            <p>
+                <table border="negro">
+                    <tr>
+                        <td>Telefono</td>
+                        <td>3165363217</td>
+                    <tr>
+                        <td>Correo</td>
+                        <td>luismiguelrussot@hotmail.com</td>
+                    <tr>
+                        <td>Ciudad de Residencia</td>
+                        <td>Villavicencio,Meta</td>
+                    </tr>
+                </table>
+            </p>
+        </div>
+        <br>
+         
+        <br>
+
+       <center> 
+        <form action="PDF/CV_descarga.pdf" download>
+            <input class="descarga" type="submit" value="Descarga PDF">
+        </form>
+        </center>
+
+</body>

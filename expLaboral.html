@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida</title>
+    <link rel="stylesheet" href="CSS/estilos.css" type="text/css" />
+    <script src="./js/temas.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <ul id="menuprincipal">
+                <li><a href="informacion.html"> Informacion</a></li>
+                <li><a class="menu" href="expLaboral.html">Experiencia Laboral</a></li>
+                <li><a href="refPersonales.html">Ref Personales</a></li>
+                <li><a href="refFamiliares.html">Ref Familiares</a></li>
+                <li><a href="estudios.html">Estudios Realizados</a></li>
+            </ul>
+        </div>
+
+        <div class="desplegable" style="float:right">
+            <button class="botondespl">Temas</button>
+            <div class="desplegable-content">
+                <a onclick=cambioColor(1)>Verde</a>
+                <a onclick=cambioColor(2)>Rojo</a>
+                <a onclick=cambioColor(3)>Morado</a>
+            </div>
+        </div>
+
+    </header>
+    <br><br><br>
+
+
+    <button class="acordeon" onclick=contraer(0)>TCA</button>
+    <div class="panel">
+        <p>
+         <pre>
+
+                Fecha: Enero-2022 hasta Marzo-2022
+                Cargo: Desarrollador Aprendiz
+                Funciones: 
+            
+                        1. Establecer parámetros para nuevos programas o aplicaciones
+                        2. Escribir el código de nuevos programas o aplicaciones
+                        3. Probar y revisar el código.
+        </pre>
+        </p>
+    </div>
+
+    <button class="acordeon" onclick=contraer(1)>Teleperformance</button>
+    <div class="panel">
+        <p>
+        <pre>
+
+                Fecha: Marzo-2021 hasta Diciembre-2021
+                Cargo: Customer Service Representative
+                Funciones: 
+        
+                    1. Aporte a la dirección general de la perspectiva financiera
+                    2. Dirección del departamento financiero y de administración
+                    3. Comprender lo que los consumidores necesitan.
+            </pre>
+        </p>
+    </div>
+
+    <button class="acordeon" onclick=contraer(2)>Idearlo Sas</button>
+    <div class="panel">
+        <p>
+        <pre>
+
+                Fecha: Enero-2019 hasta Enero-2021
+                Cargo: Director Financiero y Administrativ
+                Funciones: 
+                   1. Atender dudas, quejas y comentarios
+                   2.Construir canales de comunicación valiosos
+                   3. Elaboración del presupuesto anual y su posterior control, actualización trimestral y seguimiento
+                </pre>
+        </p>
+    </div>
+
+    <button class="acordeon" onclick=contraer(3)>Thomas Processing and System</button>
+    <div class="panel">
+        <p>
+        <pre>
+
+                Fecha: Junio-2016 hasta Noviembre-2018
+                Cargo: Director Administrativo
+                Funciones: 
+                    1. Valorar la planificación empresarial y estratégica
+                    2. Colaborar con colegas para implementar políticas y desarrollar mejoras
+                    3. Supervisar la asignación de recursos y la elaboración de presupuestos
+                        
+                </pre>
+        </p>
+    </div>
+
+</body>

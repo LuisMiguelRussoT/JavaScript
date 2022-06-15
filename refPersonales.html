@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida</title>
+    <link rel="stylesheet" href="CSS/estilos.css" type="text/css" />
+    <script src="./js/temas.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <ul id="menuprincipal">
+                <li><a href="informacion.html"> Informacion</a></li>
+                <li><a href="expLaboral.html">Experiencia Laboral</a></li>
+                <li><a class="menu" href="refPersonales.html">Ref Personales</a></li>
+                <li><a href="refFamiliares.html">Ref Familiares</a></li>
+                <li><a href="estudios.html">Estudios Realizados</a></li>
+            </ul>
+        </div>
+
+        <div class="desplegable" style="float:right">
+            <button class="botondespl">Temas</button>
+            <div class="desplegable-content">
+                <a onclick=cambioColor(1)>Verde</a>
+                <a onclick=cambioColor(2)>Rojo</a>
+                <a onclick=cambioColor(3)>Morado</a>
+            </div>
+        </div>
+    </header>
+    <br><br><br>
+    <center>
+        <button class="acordeon">Referencias Personales</button>
+    </center>
+    <br>
+    <button class="acordeon" onclick=contraer(0)>Referencia # 1</button>
+    <div class="panel">
+        <p>
+        <table border="negro">
+            <td> David Camero</td>
+            <td> 319658239</td>
+        </table>
+        </p>
+    </div>
+
+    <button class="acordeon" onclick=contraer(1)>Referencia # 2</button>
+    <div class="panel">
+        <p>
+        <table border="negro">
+            <td> Natalia Acosta</td>
+            <td>350421607</td>
+        </table>
+        </p>
+    </div>
+
+    <button class="acordeon" onclick=contraer(2)>Referencia # 3</button>
+    <div class="panel">
+        <p>
+        <table border="negro">
+            <td> William Gomez </td>
+            <td> 3204563799 </td>
+            </p>
+    </div>
+
+</body>
